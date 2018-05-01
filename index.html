@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+
+    <div>
+        <audio id="myTune">
+            <source src="./src/popcorn.mp3">
+        </audio>
+
+        <button onclick="document.getElementById('myTune').play()">Play Music</button>
+        <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
+        <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+    </div>
+
+</body>
+</html>
+
