@@ -43,3 +43,19 @@ function lazerShot() {
     document.getElementById('lazer').currentTime = 0;
     document.getElementById('lazer').play();
 }
+
+function bonus() {
+    document.getElementById('bonus').play();
+}
+
+function bangAsteroid() {
+    // чтобы был звук у нескольких подряд взрывов,
+    // сначала обнуляем предыдущий запуск аудио
+    document.getElementById('bangAsteroid').pause();
+    document.getElementById('bangAsteroid').currentTime = 0;
+    document.getElementById('bangAsteroid').play();
+}
+
+function bangRocket() {
+    document.getElementById('bangRocket').play();
+}
