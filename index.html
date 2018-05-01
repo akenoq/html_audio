@@ -15,6 +15,18 @@
             <source src="./src/lazer_shot.mp3">
         </audio>
 
+        <audio id="bonus">
+            <source src="./src/bonus.mp3">
+        </audio>
+
+        <audio id="bangAsteroid">
+            <source src="./src/bang_asteroid.mp3">
+        </audio>
+
+        <audio id="bangRocket">
+            <source src="./src/bang_rocket.mp3">
+        </audio>
+
         <button onclick="document.getElementById('myTune').play()">Play Music</button>
         <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
         <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
@@ -23,6 +35,11 @@
         <button onclick="stopRepeatedly()">Stop Repeatedly</button>
         <br>
         <button id="lazerBtn" onclick="lazerShot()">Lazer</button>
+        <br>
+        <button id="bonusBtn" onclick="bonus()">Bonus</button>
+        <br>
+        <button id="bangAsteroidBtn" onclick="bangAsteroid()">Bang Asteroid</button>
+        <button id="bangRocketBtn" onclick="bangRocket()">Bang Rocket</button>
 
     </div>
 <script src="./src/main.js"></script>
