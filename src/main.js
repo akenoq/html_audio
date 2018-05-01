@@ -35,3 +35,11 @@ function stopRepeatedly() {
     console.log("stop");
     document.getElementById("playRepeatedly").disabled = false;
 }
+
+function lazerShot() {
+    // чтобы был звук у нескольких подряд выстрелов,
+    // сначала обнуляем предыдущий запуск аудио
+    document.getElementById('lazer').pause();
+    document.getElementById('lazer').currentTime = 0;
+    document.getElementById('lazer').play();
+}

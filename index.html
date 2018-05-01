@@ -11,12 +11,18 @@
             <source src="./src/popcorn.mp3">
         </audio>
 
+        <audio id="lazer">
+            <source src="./src/lazer_shot.mp3">
+        </audio>
+
         <button onclick="document.getElementById('myTune').play()">Play Music</button>
         <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
         <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
         <br>
         <button id="playRepeatedly" onclick="playRepeatedly()">Play Repeatedly</button>
         <button onclick="stopRepeatedly()">Stop Repeatedly</button>
+        <br>
+        <button id="lazerBtn" onclick="lazerShot()">Lazer</button>
 
     </div>
 <script src="./src/main.js"></script>
